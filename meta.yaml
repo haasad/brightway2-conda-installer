@@ -1,0 +1,20 @@
+package:
+  name: brightway2-conda-installer
+  version: "0.0.1"
+
+source:
+  git_rev: origin/master
+  git_url: https://github.com/haasad/brightway2-conda-installer.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+
+about:
+  home: https://github.com/haasad/brightway2-conda-installer
+  license: BSD
+  license_file: LICENSE.txt
+  summary: Installation of brightway2 and all of its dependencies in a new conda environment.
