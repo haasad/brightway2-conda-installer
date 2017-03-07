@@ -1,6 +1,6 @@
 package:
   name: brightway2-conda-installer
-  version: "0.0.2"
+  version: "0.0.3"
 
 source:
   git_rev: origin/master
