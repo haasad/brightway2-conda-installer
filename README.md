@@ -10,3 +10,6 @@ This is a little conda package, that creates a new virtual environment with brig
 ## Use
 `create_new_brightway2_env` or `bw_env`  
 - You will be asked for an environment name and the python version
+
+## Troubleshooting
+if the installation fails, try `conda update conda` and install again
