@@ -9,7 +9,7 @@ if not ('continuum' in sys.version.lower() or 'conda' in sys.version.lower()):
 def create_new_brightway2_env():
 
 	name_str = 'name: {}\n'
-	channels_str = "channels:\n\t- defaults\n\t- haasad\n\t"
+	channels_str = "channels:\n\t- defaults\n\t- haasad\n\t- conda-forge\n\t"
 	python_str = '\ndependencies:\n\t- python={}'
 
 	conda_dependencies = ['pypardiso',
@@ -27,17 +27,22 @@ def create_new_brightway2_env():
 	                      'psutil',
 	                      'unicodecsv',
 	                      'wrapt',
-	                      'whoosh']
+	                      'whoosh',
+						  'peewee',
+						  'asteval',
+						  'future',
+						  'monotonic',
+						  'fasteners']
 
 	conda_dependencies_str = '\n\t- ' + '\n\t- '.join(conda_dependencies)
 
-	pip_dependencies = ['brightway2', 
-	                    'bw2analyzer', 
-	                    'bw2calc', 
-	                    'bw2data', 
-	                    'bw2io', 
-	                    'bw2parameters', 
-	                    'bw2speedups', 
+	pip_dependencies = ['brightway2',
+	                    'bw2analyzer',
+	                    'bw2calc',
+	                    'bw2data',
+	                    'bw2io',
+	                    'bw2parameters',
+	                    'bw2speedups',
 	                    'eight']
 
 	pip_dependencies_str = '\n\t- pip:\n\t\t- '+'\n\t\t- '.join(pip_dependencies)
@@ -62,5 +67,3 @@ def create_new_brightway2_env():
 
 if __name__ == "__main__":
     create_new_brightway2_env()
-
-    
