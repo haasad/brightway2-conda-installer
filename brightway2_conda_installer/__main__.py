@@ -55,8 +55,8 @@ def create_new_brightway2_env():
 	env_name = input('Enter the name of your new environment: ')
 	if not env_name:
 		env_name = 'bw'
-	py_ver = input('Enter the python version, one of (2.7, 3.4, 3.5): ')
-	if not py_ver in {'2.7', '3.4', '3.5'}:
+	py_ver = input('Enter the python version, one of (2.7, 3.4, 3.5, 3.6): ')
+	if not py_ver in {'2.7', '3.4', '3.5', '3.6'}:
 		py_ver = '3.5'
 
 	with open(temp_yaml_file, 'w') as f:
