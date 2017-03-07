@@ -1,10 +1,13 @@
 package:
   name: brightway2-conda-installer
-  version: "0.0.1"
+  version: "0.0.2"
 
 source:
   git_rev: origin/master
   git_url: https://github.com/haasad/brightway2-conda-installer.git
+
+build:
+  noarch: python
 
 requirements:
   build:
