@@ -8,6 +8,9 @@ source:
 
 build:
   noarch: python
+  entry_points:
+      - create_new_brightway2_env = brightway2_conda_installer.__main__:create_new_brightway2_env
+      - bw_env = brightway2_conda_installer.__main__:create_new_brightway2_env
 
 requirements:
   build:
