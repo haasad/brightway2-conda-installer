@@ -1,3 +1,6 @@
+:heavy_exclamation_mark: This repo contains a hacky workaround to install brightway2 with conda. This is not needed anymore. The recommended way (April 17)  to install brightway2 with conda is:  
+```conda install -c conda-forge -c cmutel -c haasad brightway2```  
+
 # brightway2-conda-installer
 [![Anaconda-Server Badge](https://anaconda.org/haasad/brightway2-conda-installer/badges/version.svg)](https://anaconda.org/haasad/brightway2-conda-installer) 
 
